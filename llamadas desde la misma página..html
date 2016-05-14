@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Titulo de la pagina</title>
+</head>
+<body>
+<h1>Tutorial de MySQL</h1>
+<a href="#introduccion">Introducción</a><br>
+<a href="#mostrarbasedatos">show databases</a><br>
+<a href="#creaciontabla">Creación de una tabla y mostrar sus campos</a><br>
+<a href="#cargarregistros">Carga de registros a una tabla y su recuperación</a><br>
+<a name="#introduccion"></a>
+<h2>Introduccion</h2>
+<p>
+The primary mission of the social work profession is to enhance human well-being and help meet the basic human needs of all people, with particular attention to the needs and empowerment of people who are vulnerable, oppressed, and living in poverty.<br>
+
+Social workers promote social justice and social change with and on behalf of clients. “Clients” is used inclusively to refer to individuals, families, groups, organizations, and communities. Social workers are sensitive to cultural and ethnic diversity and strive to end discrimination, oppression, poverty, and other forms of social injustice<br>
+Professional ethics are at the core of social work. The profession has an obligation to articulate its basic values, ethical principles, and ethical standards. The NASW Code of Ethics sets forth these values, principles, and standards to guide social workers’ conduct. The Code is relevant to all social workers and social work students, regardless of their professional functions, the settings in which they work, or the populations they serve.
+</p>
+<a name="mostrarbasedatos"></a>
+<h2>show databases</h2>
+<p>
+Una base de datos es un conjunto de tablas.<br>
+Una base de datos tiene un nombre con el cual accederemos a ella.<br>
+Vamos a trabajar en una base de datos ya creada en el sitio, llamada "administracion".<br>
+Para que el servidor nos muestre las bases de datos existentes, se lo solicitamos enviando la instrucción:<br>
+show databases;<br>
+Nos mostrará los nombres de las bases de datos, debe aparecer en este sitio "administracion".<br>
+</p>
+<a name="creaciontabla"></a>
+<h2>Creación de una tabla y mostrar sus campos</h2>
+<p>
+Una base de datos almacena sus datos en tablas.<br>
+Una tabla es una estructura de datos que organiza los datos en columnas y filas; cada columna es un campo (o atributo) y cada fila, un registro. La intersección de una columna con una fila, contiene un dato específico, un solo valor.<br>
+Cada registro contiene un dato por cada columna de la tabla.<br>
+Cada campo (columna) debe tener un nombre. El nombre del campo hace referencia a la información que almacenará.<br>
+Cada campo (columna) también debe definir el tipo de dato que almacenará.<br>
+</p>
+<a name="cargarregistros"></a>
+<h2>Carga de registros a una tabla y su recuperación</h2>
+<p>
+Usamos "insert into". Especificamos los nombres de los campos entre paréntesis y separados por comas y luego los valores para cada campo, también entre paréntesis y separados por comas.<br>
+Es importante ingresar los valores en el mismo orden en que se nombran los campos, si ingresamos los datos en otro orden, no aparece un mensaje de error y los datos se guardan de modo incorrecto.<br>
+Note que los datos ingresados, como corresponden a campos de cadenas de caracteres se colocan entre comillas simples. Las comillas simples son OBLIGATORIAS.
+</p>
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de formulario</title>
+</head>
+<body>
+<form action="registrardatos.php" method="post">
+Ingrese su nombre:
+<input type="text" name="nombre" size="20">
+<br>
+<input type="submit" value="enviar">
+</form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario - input type="text"/ input type="password"</title>
+</head>
+<body>
+<h3>Formulario - input type="text"/ input type="password"</h3>
+<form action="registrardatos.php" method="post">
+Ingrese su nombre: 
+<input type="text" name="nombre" size="20">
+<br>
+Ingrese su clave: 
+<input type="password" name="clave" size="12">
+<br>
+<input type="submit" value="enviar">
+<input type="reset" value="borrar">
+</form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario - textarea</title>
+</head>
+<body>
+<h3>Formulario - textarea</h3>
+<form action="registrardatos.php" method="post">
+Ingrese su nombre:
+<input type="text" name="nombre" size="30"><br>
+Ingrese su mail:
+<input type="text" name="mail" size="50"><br>
+Comentarios:<br>
+<textarea name="comentarios" rows="5" cols="60"></textarea> 
+<br>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario - input type="checkbox"</title>
+</head>
+<body>
+<h3>Formulario - input type="checkbox"</h3>
+<form action="registrardatos.php" method="post">
+Ingrese su nombre:
+<input type="text" name="nombre" size="30"><br>
+Seleccione los lenguajes que conoce:
+<br>
+<input type="checkbox" name="java">Java<br>
+<input type="checkbox" name="cmasmas">C++<br>
+<input type="checkbox" name="c">C<br>
+<input type="checkbox" name="csharp">C#<br>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario - input type="radio"</title>
+</head>
+<body>
+<h3>Formulario - input type="radio"</h3>
+<form action="registrardatos.php" method="post">
+Ingrese su nombre:
+<input type="text" name="nombre" size="30"><br>
+Seleccione el máximo nivel de estudios que tiene:
+<br>
+<input type="radio" name="estudios" value="1">Sin estudios<br>
+<input type="radio" name="estudios" value="2">Primario<br>
+<input type="radio" name="estudios" value="3">Secundario<br>
+<input type="radio" name="estudios" value="4">Universitario<br>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario - select</title>
+</head>
+<body>
+<h3>Formulario - select</h3>
+<form action="registrardatos.php" method="post">
+Ingrese su nombre:
+<input type="text" name="nombre" size="30"><br>
+Seleccione su pais:
+<select name="pais">
+<option value="1">Argentina</option>
+<option value="2">España</option>
+<option value="3">México</option>
+<option value="4">Guatemala</option>
+<option value="11">Bolivia</option>
+<option value="13">Perú</option>
+<option value="14">Ecuador</option>
+<option value="15">Paraguay</option>
+<option value="16">Uruguay</option>
+<option value="17">Chile</option>
+</select>
+<br>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario - select (cuadro de selección múltiple)</title>
+</head>
+<body>
+<h3>Formulario - select (cuadro de selección múltiple)</h3>
+<form action="registrardatos.php" method="post">
+Seleccione uno o varios colores (Presione Ctrl para seleccionar varios colores)<br>
+<select name="colores[]" size="4" multiple>
+<option value="1">Rojo</option>
+<option value="2">Verde</option>
+<option value="3">Azul</option>
+<option value="4">Amarillo</option>
+<option value="5">Blanco</option>
+<option value="6">Negro</option>
+<option value="7">Naranja</option>
+<option value="8">Violeta</option>
+</select>
+<br>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de formulario</title>
+</head>
+<body>
+<h3>Formulario - select (agrupamiento de opciones)</h3>
+<form action="registrardatos.php" method="post">
+Seleccione una fruta o verdura:
+<select name="articulo">
+<optgroup label="Frutas">
+<option value="1">Naranjas</option>
+<option value="2">Manzanas</option>
+<option value="3">Sandia</option>
+<option value="4">Frutilla</option>
+<option value="5">Durazno</option>
+<option value="6">Ciruela</option>
+</optgroup>
+<optgroup label="Verduras">
+<option value="7">Lechuga</option>
+<option value="8">Acelga</option>
+<option value="9">Zapallo</option>
+<option value="10">Papas</option>
+<option value="11">Batatas</option>
+<option value="13">Zanahorias</option>
+<option value="14">Rabanitos</option>
+<option value="15">Calabaza</option>
+</optgroup>
+</select>
+<br>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+ 	
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de formulario</title>
+</head>
+<body>
+<h3>Formulario - button</h3>
+<form action="registrardatos.php" method="post">
+Ingrese su nombre:
+<input type="text" name="nombre" size="20">
+<br>
+<button type="submit">Enviar<img src="enviar.gif" alt="envio"></button>
+<button type="reset">Borrar<img src="borrar.gif" alt="borrado"></button>
+</form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de formulario</title>
+</head>
+<body>
+<h3>Formulario - input type="button"</h3>
+<form action="registrardatos.php" method="post">
+<h1>Resultado:<h1>
+<input type="button" name="boton7" value=" 7 ">
+<input type="button" name="boton8" value=" 8 ">
+<input type="button" name="boton9" value=" 9 ">
+<input type="button" name="botondiv" value=" / ">
+<br>
+<input type="button" name="boton4" value=" 4 ">
+<input type="button" name="boton5" value=" 5 ">
+<input type="button" name="boton6" value=" 6 ">
+<input type="button" name="botondiv" value=" * ">
+<br>
+<input type="button" name="boton1" value=" 1 ">
+<input type="button" name="boton2" value=" 2 ">
+<input type="button" name="boton3" value=" 3 ">
+<input type="button" name="botonmas" value=" + ">
+<br>
+<input type="button" name="boton0" value=" 0 ">
+<input type="button" name="botonigual" value="    =   ">
+<input type="button" name="botonmenos" value=" - ">
+</form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de formulario</title>
+</head>
+<body>
+<h3>Formulario - input type="file"</h3>
+<form action="registrardatos.php" method="post" enctype="multipart/form-data">
+Ingrese su nombre:
+<input type="text" name="nombre" size="30"><br>
+Seleccione la foto:
+<input type="file" name="foto">
+<br>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de formulario</title>
+</head>
+<body>
+<h3>Formulario - input type="hidden"</h3>
+<form action="registrardatos.php" method="post">
+<input type="hidden" value="10:20" name="hora">
+Ingrese su nombre:
+<input type="text" name="nombre" size="30">
+<br>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de formulario</title>
+</head>
+<body>
+<h3>Formulario - agrupamiento de controles</h3>
+<form action="registrardatos.php" method="post">
+<fieldset>
+<legend>Datos personales</legend>
+Apellido y nombre:
+<input type="text" name="nombre" size="30"><br>
+Documento de identidad:
+<input type="text" name="dni" size="8"><br>
+Fecha de nacimiento:
+<input type="text" name="fechanacimiento" size="12"><br>
+Dirección:
+<input type="text" name="direccionpersona" size="30"><br>
+</fieldset>
+<fieldset>
+<legend>Datos Laborales</legend>
+Nombre de la empresa:
+<input type="text" name="nombreempresa" size="30"><br>
+Actividad:
+<input type="text" name="actividad" size="50"><br>
+Dirección:
+<input type="text" name="direccionempresa" size="30"><br>
+</fieldset>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de formulario</title>
+</head>
+<body>
+<h3>Formulario - controles con valores iniciales</h3>
+<form action="registrardatos.php" method="post">
+Apellido y nombre:
+<input type="text" name="nombre" size="30"><br>
+Es mayor de edad?:<br>
+<input type="radio" name="radio1" checked value="si">Si<br>
+<input type="radio" name="radio1" value="no">No<br>
+Telefono:
+<input type="text" value="453-" name="telefono" size="15"><br>
+<textarea name="comentarios" rows="5" cols="40">Ingrese aqui sus comentarios</textarea><br>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de formulario</title>
+</head>
+<body>
+<h3>Formulario - orden de foco de controles.</h3>
+<form action="registrardatos.php" method="post">
+<input type="text" name="text1" size="5" tabindex="1">
+<input type="text" name="text2" size="5" tabindex="4">
+<input type="text" name="text3" size="5" tabindex="7">
+<br>
+<input type="text" name="text4" size="5" tabindex="2">
+<input type="text" name="text5" size="5" tabindex="5">
+<input type="text" name="text6" size="5" tabindex="8">
+<br>
+<input type="text" name="text7" size="5" tabindex="3">
+<input type="text" name="text8" size="5" tabindex="6">
+<input type="text" name="text9" size="5" tabindex="9">
+<br>
+<input type="submit" value="enviar" tabindex="10">
+</form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de formulario</title>
+</head>
+<body>
+<h3>Formulario - Inhabilitar controles.</h3>
+<form action="registrardatos.php" method="post">
+Seleccione la sección donde desea ingresar:
+<br>
+<input type="radio" name="seccion" value="1" disabled>Niños<br>
+<input type="radio" name="seccion" value="2">Adolescentes<br>
+<input type="radio" name="seccion" value="3">Mayores<br>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de formulario</title>
+</head>
+<body>
+<h3>Formulario - text/password y maxlength</h3>
+<form action="registrardatos.php" method="post">
+Ingrese su nombre: 
+<input type="text" name="nombre" maxlength="20" size="20">
+<br>
+Ingrese su clave: 
+<input type="password" name="clave" maxlength="12" size="12">
+<br>
+<input type="submit" value="enviar">
+</form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de formulario</title>
+</head>
+<body>
+<h3>Formulario - text/password/textarea y readonly</h3>
+<form action="registrardatos.php" method="post">
+Ingrese su nombre:
+<input type="text" name="nombre" size="30" value="Interpolacion" readonly><br>
+Contrato:<br>
+<textarea name="comentarios" rows="5" cols="60" 
+readonly>
+Por la presente ..............................
+</textarea> 
+<br>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba de formulario</title>
+</head>
+<body>
+<h1>Formulario - Envio de datos mediante mail.</h1>
+<h2>Reclamos</h2>
+<form action="mailto:reclamos@gmail.com" method="post" enctype="text/plain">
+Ingrese su nombre: 
+<input type="text" name="nombre" size="20">
+<br>
+Ingrese su dirección: 
+<input type="text" name="dirección" size="30">
+<br>
+Informe del problema:
+<br>
+<textarea rows="5" cols="40" name="problema"></textarea>
+<br>
+<input type="submit" value="enviar">
+</form>
+</body>
+</html>
+
+<html>
+<head>
+<title>Prueba de formulario</title>
+</head>
+<body>
+<h3>Formulario - label</h3>
+<form action="registrardatos.php" method="post">
+<fieldset>
+<legend>Formulario de comentarios.</legend>
+<label for="nombre">Ingrese su nombre:</label>
+<input type="text" name="nombre" size="30" id="nombre"><br>
+<label for="mail">Ingrese su mail:</label>
+<input type="text" name="mail" size="50" id="mail"><br>
+<label for="comentarios">Comentarios:</label><br>
+<textarea name="comentarios" rows="5" cols="60" 
+id="comentarios"></textarea>
+<br>
+<input type="submit" value="Enviar">
+</fieldset>
+</form>
+</body>
+</html>
